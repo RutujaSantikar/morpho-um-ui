@@ -1,0 +1,40 @@
+<app-toolbar></app-toolbar>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened class="left-nav">
+    <div id="parent">
+      <div id="narrow" class="w-5rem content-height bg-white">
+        <div class="grid m-0 p-0">
+          <div
+            class="nav-items col-12 text-center mt-11 cursor-pointer"
+            routerLinkActive="active-menu-background"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <div class="font-semibold text-xl mb-7">User Settings</div>
+            <div class="text-lg mb-4">User Role</div>
+            <div class="text-lg mb-8">Users</div>
+            <div class="font-semibold text-xl mb-7">System Configuration</div>
+            <div class="text-lg mb-4">Company</div>
+            <div class="text-lg mb-4">Products</div>
+            <div class="text-lg">Logs</div>
+          </div>
+        </div>
+      </div>
+      <div id="wide" class="pl-1 ml-8 mt-7">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content class="right-content">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor laudantium
+    neque atque culpa iusto quaerat blanditiis quod natus excepturi aliquam?
+    Laudantium culpa minima, hic quidem accusamus, quaerat at accusantium
+    molestiae consequatur nam consectetur impedit rerum aut veritatis explicabo?
+    Pariatur animi dolor odit dignissimos quibusdam placeat nam quae
+    necessitatibus fugiat atque? Lorem ipsum dolor sit amet consectetur,
+    adipisicing elit. Sit asperiores exercitationem qui debitis impedit autem
+    veniam ea minima id, corporis obcaecati sunt officiis iure sapiente
+    voluptate distinctio quas reiciendis a fuga saepe. Corrupti quae blanditiis
+    soluta nisi error sunt, dolorum, repellat commodi illo reprehenderit beatae
+    hic dolor facere sed dicta.
+  </mat-drawer-content>
+</mat-drawer-container>
